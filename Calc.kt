@@ -16,16 +16,7 @@ fun main(args: Array) {
     }
     showResult(operation, result)
 }
-=======
-       val (operation, num1, num2) = parseArguments(args)
-       val result = when (operation) {
-           "multiplica" -> multiplica(num1, num2)
-           "divide" -> divide(num1, num2)
-           else -> throw IllegalArgumentException("Operación no soportada")
-       }
-       showResult(operation, result)
-   }
->>>>>>> feature/division
+
 
 fun parseArguments(args: Array): Triple {
     if (args.size != 3) {
