@@ -4,10 +4,14 @@ fun main(args: Array) {
     val result = when (operation) {
         "multiplica" -> multiplica(num1, num2)
 <<<<<<< HEAD
+<<<<<<< HEAD
         "divide" -> divideE(num1, num2)
 =======
         "suma" -> suma(num1, num2)
 >>>>>>> feature/suma
+=======
+        "resta" -> resta(num1, num2)
+>>>>>>> feature/resta
         else -> throw IllegalArgumentException("Operación no soportada")
     }
     showResult(operation, result)
@@ -38,11 +42,16 @@ fun multiplica(num1: Int, num2: Int): Int {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 fun divide(num1: Int, num2: Int): Int {
     if (num2 == 0) {
         throw IllegalArgumentException("Error: No se puede dividir por cero")
     }
     return num1 / num2
+=======
+fun resta(num1: Int, num2: Int): Int {
+    return num1 - num2
+>>>>>>> feature/resta
 }
 
 fun showResult(operation: String, result: Int) {
